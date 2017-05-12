@@ -1,0 +1,51 @@
+.header {
+  color: $white;
+
+  .wrapper {
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
+.header-main {
+  background-color: $secondary-color;
+
+  .logo {
+    display: block;
+    float: left;
+    padding: 11px 10px 10px;
+  }
+
+  .main-header-content {
+    float: right;
+    padding: 8px 0;
+  }
+
+}
+
+.header-categories {
+  background: $primary-color;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    float: left;
+  }
+
+  a {
+    display: block;
+    padding: 0 15px;
+    color: $white;
+    font-size: 12px;
+    line-height: 37px;
+    font-weight: bold;
+  }
+
+}
