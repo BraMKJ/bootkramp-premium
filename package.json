@@ -1,0 +1,14 @@
+{
+  "name": "bootkramp-premium",
+  "version": "1.0.0",
+  "description": "BootKramp - Team Premium project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Bram Dijkhuis",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.15.2"
+  }
+}
