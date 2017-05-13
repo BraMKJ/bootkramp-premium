@@ -1,0 +1,69 @@
+.thankyou-banner {
+  width: 1200px;
+  height: 640px;
+  background-image: url('/assets/img/thankyou-banner.jpg');
+  background-size: cover;
+
+  .banner-backdrop {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0) 89%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    color: #fff;
+  }
+
+  .banner-header {
+    font-size: 72px;
+    color: #dbdee4;
+    font-weight: bold;
+  }
+
+  .banner-subheader {
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 60%;
+  }
+
+  ul {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .thankyou-usps {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .thankyou-category {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 1;
+  }
+
+}
+
+.contact-us {
+  padding: 30px 0;
+  background-color: $primary-color;
+  color: $white;
+  font-size: 21px;
+  text-align: center;
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: $white;
+    text-decoration: none;
+  }
+
+}
