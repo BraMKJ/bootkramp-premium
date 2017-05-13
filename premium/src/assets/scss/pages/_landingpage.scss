@@ -11,7 +11,7 @@
     position: relative;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 70%,rgba(0,0,0,0) 89%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0) 89%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
   }
 
   .banner-content {
@@ -22,15 +22,155 @@
   }
 
   .banner-header {
-    margin-bottom: 20px;
-    font-size: 48px;
+    font-size: 56px;
     color: #dbdee4;
     font-weight: bold;
+  }
+
+  .banner-subheader {
+    margin-bottom: 20px;
+    width: 70%;
   }
 
   ul {
     font-size: 20px;
     margin-bottom: 20px;
+  }
+
+}
+
+.lp-section {
+  padding: 40px;
+  font-size: 18px;
+
+  h2 {
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  iframe, .ytph {
+    float: right;
+  }
+
+  &__free-items {
+    background-color: $mischka;
+  }
+
+  &__extra-service {
+    background-color: $mischka;
+  }
+
+  &__discount {
+    background-color: $white;
+
+    iframe, .ytph {
+      float: left;
+    }
+
+  }
+
+  &__join {
+    background-color: $primary-color;
+    color: $white;
+
+    .lp-section__content {
+      float: left;
+      width: 70%;
+    }
+
+    .lp-section__cta {
+      float: left;
+      display: flex;
+      width: 30%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button {
+      font-size: 24px;
+      padding: 16px 24px;
+    }
+
+  }
+
+}
+
+.discover__options {
+  display: flex;
+  flex: row;
+}
+
+.discover-option {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 1;
+  text-align: center;
+  color: $black;
+
+  &:hover {
+    color: $black;
+    text-decoration: underline;
+  }
+
+}
+
+.discover-option__figure {
+  margin: 0 auto 20px;
+  width: 80px;
+  height: 64px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .discover-option__free-items & {
+    background-image: url('/assets/img/gift.svg');
+  }
+
+  .discover-option__discount & {
+    background-image: url('/assets/img/truck.svg');
+  }
+
+  .discover-option__extra-service & {
+    background-image: url('/assets/img/handshake-o.svg');
+  }
+
+}
+
+.usps {
+  float: left;
+  margin: 0;
+  padding-right: 40px;
+  width: calc(100% - 448px);
+
+  .lp-section__discount & {
+    float: right;
+    padding-left: 40px;
+  }
+
+}
+
+.usp {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 16px;
+  list-style: none;
+
+  &:before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    display: block;
+    content: " ";
+    background-image: url("/assets/img/verification-mark.png");
+    width: 24px;
+    height: 24px;
+  }
+
+  &__title {
+    font-weight: bold;
   }
 
 }
